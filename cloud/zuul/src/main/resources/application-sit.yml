@@ -2,7 +2,7 @@ spring:
   cloud:
     config:
       uri: http://config:80/
-      profile: dev
+      profile: sit
       discovery:
         service-id: config
     inetutils:
