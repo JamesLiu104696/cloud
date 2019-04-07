@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8001/
+      profile: dev
+      discovery:
+        service-id: config
+eureka:
+  instance:
+    hostname: localhost
+    port: 8000
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+      
+
+          

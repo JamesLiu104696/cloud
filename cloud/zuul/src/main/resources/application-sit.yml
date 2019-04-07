@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    config:
+      uri: http://config:80/
+      profile: dev
+      discovery:
+        service-id: config
+    inetutils:
+      preferred-networks:
+        - 10.1
+eureka:
+  instance:
+    hostname: eureka
+    port: 8000
+    preferIpAddress: true
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+      
+
+          

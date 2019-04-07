@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/JamesLiu104696/cld.git
+          search-paths: /**
+          username: JamesLiu104696
+          password: Test135790
+eureka:
+  instance:
+    hostname: localhost
+    port: 8000
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
