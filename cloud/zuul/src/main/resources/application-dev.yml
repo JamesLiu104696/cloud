@@ -5,6 +5,7 @@ spring:
       profile: dev
       discovery:
         service-id: config
+
 eureka:
   instance:
     hostname: localhost
