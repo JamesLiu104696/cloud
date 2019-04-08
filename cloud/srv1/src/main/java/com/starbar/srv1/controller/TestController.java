@@ -15,11 +15,11 @@ public class TestController {
 	
 	@GetMapping("/test")
 	public String test() {
-		return "It is from srv1";
+		return "It is from srv1 (test)";
 	}
 	
 	@GetMapping("/test1")
 	public String test1() {
-		return feign.test();
+		return feign.test() + "\\n srv1 call srv2!";
 	}
 }

@@ -11,8 +11,8 @@ spring:
 zuul:
   routers:
     service1:
-      path: /a1/**
+      path: /v1/**
       serviceId: srv1
     service2:
-      path: /a2/**
+      path: /v2/**
       serviceId: srv2

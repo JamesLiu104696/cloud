@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/v1")
+@RequestMapping("/v2")
 public class TestController {
 	
 	@RequestMapping(value="/test", method=RequestMethod.GET)
 	public String test() {
-		return "It is from srv2!";
+		return "It is from srv2 (test)!";
 	}
 }

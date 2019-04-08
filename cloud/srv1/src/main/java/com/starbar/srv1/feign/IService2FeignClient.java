@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @FeignClient(name = "srv2")
 public interface IService2FeignClient {
 
-	@RequestMapping(value="/v1/test", method=RequestMethod.GET)
+	@RequestMapping(value="/v2/test", method=RequestMethod.GET)
 	public String test();
 }
