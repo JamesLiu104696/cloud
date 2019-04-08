@@ -6,3 +6,12 @@ spring:
     name: zuul
   profiles:
     active: dev
+    
+zuul:
+  routers:
+    service1:
+      path: /a1/**
+      serviceId: srv1
+    service2:
+      path: /a2/**
+      serviceId: srv2
