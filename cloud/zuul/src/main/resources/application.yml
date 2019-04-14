@@ -7,12 +7,3 @@ spring:
   profiles:
     active: dev
     
-
-zuul:
-  routers:
-    service1:
-      path: /v1/**
-      serviceId: srv1
-    service2:
-      path: /v2/**
-      serviceId: srv2

@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.starbar.srv1.feign.IService2FeignClient;
 
 @RestController
-@RequestMapping("/v1")
 public class TestController {
 	@Autowired
 	private IService2FeignClient feign;
