@@ -6,13 +6,14 @@ spring:
     name: srv2
   cloud:
     config:
-      uri: http://config:80/
+      uri: http://config/
       profile: sit
       discovery:
         service-id: config
     inetutils:
       preferred-networks:
         - 10.1
+        
 eureka:
   instance:
     hostname: eureka

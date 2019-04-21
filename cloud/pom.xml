@@ -32,5 +32,6 @@
 		<module>srv1</module>
 		<module>srv2</module>
 		<module>zuul</module>
+		<module>gateway</module>
 	</modules>
 </project>

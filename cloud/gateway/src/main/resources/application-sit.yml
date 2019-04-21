@@ -2,19 +2,16 @@ server:
   port: 80
 
 spring:
-  application:
-    name: config
   cloud:
     config:
-      server:
-        git:
-          uri: https://github.com/JamesLiu104696/cld.git
-          search-paths: /**
-          username: JamesLiu104696
-          password: Test135790
+      uri: http://config:80/
+      profile: sit
+      discovery:
+        service-id: config
     inetutils:
       preferred-networks:
         - 10.1
+
 eureka:
   instance:
     hostname: eureka
@@ -23,6 +20,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
-      
-
-          
