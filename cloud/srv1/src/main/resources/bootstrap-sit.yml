@@ -4,7 +4,6 @@ server:
 spring:
   cloud:
     config:
-      uri: http://config:80/
       profile: sit
       discovery:
         service-id: config
